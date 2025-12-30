@@ -4,7 +4,7 @@
 #include <stack>
 #define MAXN 5005
 
-//tarjan
+// tarjan
 
 using namespace std;
 
@@ -33,7 +33,7 @@ void tarjan(int u)
         {
             low[u] = min(dfn[v], low[u]);
         }
-        else
+        else if (dfn[v] == 0)
         {
             tarjan(v);
             low[u] = min(low[v], low[u]);
