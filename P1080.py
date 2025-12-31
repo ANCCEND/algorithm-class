@@ -1,6 +1,5 @@
 import sys
 
-
 def solve():
     input_data = sys.stdin.read().split()
 
