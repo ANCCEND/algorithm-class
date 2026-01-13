@@ -4,7 +4,7 @@
 
 using namespace std;
 
-//记忆化搜索
+// 记忆化搜索
 
 const int MAX = 105;
 
@@ -23,7 +23,7 @@ int dfs(int x, int y)
     for (int i = 0; i < 4; i++)
     {
         int next_x = x + dx[i], next_y = y + dy[i];
-        if (next_x<1 | next_y<1 | next_x> r | next_y> c)
+        if (next_x < 1 || next_y < 1 || next_x > r || next_y > c)
             continue;
         if (a[x][y] > a[next_x][next_y])
         {

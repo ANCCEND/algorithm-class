@@ -7,6 +7,8 @@
 
 using namespace std;
 
+//状压dp
+
 double Distance[20][20], dp[1 << 15][20];
 double x[20], y[20];
 int n;
